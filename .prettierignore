@@ -1,0 +1,9 @@
+/dist/*
+.local
+/src/plugins/zTree/*
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/public/*

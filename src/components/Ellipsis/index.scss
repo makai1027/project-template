@@ -1,0 +1,11 @@
+.data-lite-ellipsis {
+  &.content-middle {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    .text-box {
+      white-space: nowrap;
+      display: inline !important;
+    }
+  }
+}

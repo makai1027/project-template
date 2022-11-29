@@ -1,0 +1,77 @@
+/* theme color */
+$primary-color: #409eff;
+$success-color: #67c23a;
+$warning-color: #e6a23c;
+$danger-color: #f56c6c;
+$info-color: #909399;
+
+// 字体颜色
+$font-normal: #303133;
+$font-regular: #606266;
+$font-light: #909399;
+$font-placeholder: #a8abb2;
+$font-disabled: #c0c4cc;
+
+// 框框颜色
+$border-darker: #cdd0d6;
+$border-dark: #d4d7de;
+$border-base: #dcdfe6;
+$border-light: #e4e7ed;
+$border-lighter: #ebeef5;
+
+// 背景颜色
+$fill-darker: #e6e8eb;
+$fill-dark: #ebedf0;
+$fill-base: #f0f2f5;
+$fill-light: #f5f7fa;
+$fill-lighter: #fafafa;
+$fill-extra-light: #fafcff;
+$fill-blank: #ffffff;
+$aside-bg-color: #001529;
+
+// 纯色
+$basic-black: #000000;
+$basic-white: #ffffff;
+$transparent: transparent;
+$page-background: #f2f3f5;
+
+// 基础宽高配置
+$headerHeight: 48px;
+$logoHeight: 36px;
+$asideWidth: 200px;
+$asideCollapseWidth: 63px;
+
+// vite scss预处理器不支持：export
+:export {
+  primaryColor: $primary-color;
+  successColor: $success-color;
+  warningColor: $warning-color;
+  dangerColor: $danger-color;
+  infoColor: $info-color;
+  fontNormal: $font-normal;
+  fontRegular: $font-regular;
+  fontLight: $font-light;
+  fontPlaceholder: $font-placeholder;
+  fontDisabled: $font-disabled;
+  borderDarker: $border-darker;
+  borderDark: $border-dark;
+  borderBase: $border-base;
+  borderLight: $border-light;
+  borderLighter: $border-lighter;
+  fillDarker: $fill-darker;
+  fillDark: $fill-dark;
+  fillBase: $fill-base;
+  fillLight: $fill-light;
+  fillLighter: $fill-lighter;
+  fillExtraLight: $fill-extra-light;
+  fillBlank: $fill-blank;
+  basicBlack: $basic-black;
+  basicWhite: $basic-white;
+  transparent: $transparent;
+  pageBackground: $page-background;
+  headerHeight: $headerHeight;
+  logoHeight: $logoHeight;
+  asideWidth: $asideWidth;
+  asideCollapseWidth: $asideCollapseWidth;
+  asideBgColor: $aside-bg-color;
+}
