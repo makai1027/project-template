@@ -40,15 +40,14 @@ export function createMenuGuard(router: Router) {
       next()
       return
     }
-
     const routeList = await appStore.buildRouterMenu()
-
     routeList.forEach((route) => {
       router.addRoute(route as unknown as RouteRecordRaw)
     })
+    router.addRoute(PAGE_NOT_FOUND as unknown as RouteRecordRaw)
 
     if (to.name === PAGE_NOT_FOUND.name) {
-      next()
+      next({ path: to.fullPath, replace: true, query: to.query })
     } else {
       const redirectPath = from.query.redirect as string
       const redirect = decodeURIComponent(redirectPath)

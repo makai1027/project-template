@@ -10,3 +10,26 @@ html {
     box-sizing: border-box;
   }
 }
+html {
+  --fill-base-color: #f6f6f6;
+  --header-bg-color: #ffffff;
+  --header-bg-hover-color: #ffffff;
+  --font-normal-color: #000;
+  --header-active-menu-bg-color: #ffffff;
+  --sider-dark-bg-color: #001529;
+  --sider-dark-darken-bg-color: #00061a;
+  --sider-dark-lighten-bg-color: #0c2135;
+  &.dark {
+    /* 自定义深色背景颜色 */
+    --fill-base-color: #000000;
+    --el-bg-color: #151515;
+    --font-normal-color: #fff;
+    --login-dark-bg-color: #293146;
+    --header-bg-color: #151515;
+    --header-bg-hover-color: #242424;
+    --header-active-menu-bg-color: #242424;
+    --sider-dark-bg-color: #212121;
+    --sider-dark-darken-bg-color: #121212;
+    --sider-dark-lighten-bg-color: #2d2d2d;
+  }
+}

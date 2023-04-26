@@ -8,6 +8,7 @@ import { addWaterMarker } from '@/utils/addWaterMark'
 import { setupRouterGuard } from '@/router/guard/index'
 import { setupSet } from '@/setting/initLocalSet'
 import { router } from '@/router'
+import 'virtual:windi.css'
 
 async function init() {
   const app = createApp(App)

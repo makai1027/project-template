@@ -7,6 +7,7 @@ import { configCompressPlugin } from './compress'
 import { configVisualizerConfig } from './visualizer'
 // import { configImageminPlugin } from './imagemin'
 import svgLoader from 'vite-svg-loader'
+import windiCSS from 'vite-plugin-windicss'
 import { configAutoImport } from './autoImport'
 
 export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
@@ -25,6 +26,8 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
     vueJsx(),
     svgLoader()
   ]
+  // 导入原子化
+  vitePlugins.push(windiCSS())
   // 自动导入 // 导入按需加载
   vitePlugins.push(...configAutoImport())
 

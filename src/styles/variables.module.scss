@@ -1,5 +1,5 @@
 /* theme color */
-$primary-color: #409eff;
+$primary-color: #246fdd;
 $success-color: #67c23a;
 $warning-color: #e6a23c;
 $danger-color: #f56c6c;
@@ -22,11 +22,11 @@ $border-lighter: #ebeef5;
 // 背景颜色
 $fill-darker: #e6e8eb;
 $fill-dark: #ebedf0;
-$fill-base: #f0f2f5;
+$fill-base: var(--fill-base-color);
 $fill-light: #f5f7fa;
 $fill-lighter: #fafafa;
 $fill-extra-light: #fafcff;
-$fill-blank: #ffffff;
+$fill-blank: var(--el-bg-color);
 $aside-bg-color: #001529;
 
 // 纯色

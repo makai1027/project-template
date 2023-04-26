@@ -60,10 +60,24 @@ export const LOGIN_ROUTE = {
 export const RootRoute: AppRouteRecordRaw = {
   path: '/',
   name: 'Root',
+  component: LAYOUT,
   redirect: PageEnum.BASE_HOME,
   meta: {
-    title: 'Root'
-  }
+    title: 'Root',
+    hideBreadcrumb: true,
+    hideMenu: true
+  },
+  children: [
+    {
+      path: PageEnum.BASE_HOME,
+      name: '首页',
+      component: () => import('@/layouts/components/welcome/index.vue'),
+      meta: {
+        title: '首页',
+        hideBreadcrumb: true
+      }
+    }
+  ]
 }
 
 const ROOT_PAGE: AppRouteRecordRaw = {
@@ -88,4 +102,4 @@ const ROOT_PAGE: AppRouteRecordRaw = {
   ]
 }
 
-export const basicRoutes = [LOGIN_ROUTE, RootRoute, ROOT_PAGE, REDIRECT_ROUTE, PAGE_NOT_FOUND]
+export const basicRoutes = [LOGIN_ROUTE, RootRoute, REDIRECT_ROUTE, PAGE_NOT_FOUND]

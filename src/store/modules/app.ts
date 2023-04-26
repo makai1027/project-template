@@ -16,6 +16,7 @@ interface StateType {
   pageLoading: boolean
   originMenuList: Array<any>
   token: string
+  darkMode: boolean
   currentMenuKey: number | string
 }
 
@@ -65,7 +66,8 @@ export const useAppStore = defineStore({
     pageLoading: false,
     originMenuList: [],
     currentMenuKey: -1,
-    token: ''
+    token: '',
+    darkMode: false
   }),
   getters: {
     getToken(): string {
@@ -76,9 +78,15 @@ export const useAppStore = defineStore({
     },
     getUserInfo(): Recordable<string> {
       return this.userInfo
+    },
+    getDarkMode(): boolean {
+      return this.darkMode
     }
   },
   actions: {
+    setDarkMode(isDark: boolean) {
+      this.darkMode = isDark
+    },
     setToken(token: string): void {
       this.token = token
     },

@@ -275,6 +275,10 @@ module.exports = {
 }
 ```
 
+## css 原子化 使用 windiCss
+
+教程：https://cn.windicss.org/integrations/vite.html
+
 ## 新增功能
 
 - 新增字体图标按需引用
